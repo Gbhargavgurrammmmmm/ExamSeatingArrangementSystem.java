@@ -1,0 +1,19 @@
+-- Create the database
+CREATE DATABASE IF NOT EXISTS exam_system;
+USE exam_system;
+
+-- Create the Students Table
+CREATE TABLE IF NOT EXISTS students (
+    roll_number VARCHAR(20) PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
+
+-- Create the Rooms Table
+CREATE TABLE IF NOT EXISTS rooms (
+    room_number VARCHAR(20) PRIMARY KEY,
+    capacity INT NOT NULL
+);
+
+-- Sample Admin Account
+INSERT INTO admin_credentials (username, password) VALUES
+('admin', 'adminpassword');
